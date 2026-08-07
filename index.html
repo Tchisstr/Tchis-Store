@@ -5,127 +5,251 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tchis Store</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0d1117;
-color:white;
+background:#0b1120;
+color:#fff;
 }
 
 header{
-background:linear-gradient(90deg,#0066ff,#00bfff);
-padding:50px 20px;
+background:linear-gradient(135deg,#2563eb,#0ea5e9);
+padding:70px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:42px;
+font-size:48px;
+margin-bottom:10px;
 }
 
 header p{
-margin-top:10px;
-font-size:18px;
+font-size:20px;
+opacity:.95;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:30px 20px;
-}
-
-.card{
-background:#161b22;
-padding:20px;
-margin:20px 0;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-h2{
-color:#3ea6ff;
-margin-bottom:15px;
-}
-
-ul{
-padding-left:20px;
-line-height:2;
-}
-
-.button{
+.btn{
 display:inline-block;
-margin-top:20px;
-padding:14px 30px;
-background:#25D366;
+margin-top:30px;
+padding:15px 35px;
+background:#22c55e;
 color:white;
 text-decoration:none;
 border-radius:10px;
 font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:35px;
+font-size:34px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#151f33;
+padding:25px;
+border-radius:18px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#60a5fa;
+}
+
+.card ul{
+padding-left:18px;
+line-height:2;
+}
+
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.box{
+background:#1d293d;
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-size:18px;
 }
 
 footer{
+margin-top:60px;
+background:#111827;
 text-align:center;
 padding:30px;
-background:#111;
-margin-top:50px;
-color:#aaa;
+color:#bbb;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
-<h1>Tchis Store</h1>
-<p>Top Up Game • Voucher • Jual HP</p>
+
+<h1>🏪 Tchis Store</h1>
+
+<p>Top Up Game • Pulsa • Token PLN • E-Wallet • Voucher • Jual HP</p>
+
+<a class="btn" href="https://wa.me/62XXXXXXXXXX">
+Pesan via WhatsApp
+</a>
+
 </header>
 
-<div class="container">
+<section>
+
+<h2>🔥 Layanan Kami</h2>
+
+<div class="grid">
 
 <div class="card">
-<h2>🎮 Top Up Game</h2>
+<h3>🎮 Top Up Game</h3>
 <ul>
-<li>Free Fire</li>
 <li>Mobile Legends</li>
+<li>Free Fire</li>
 <li>PUBG Mobile</li>
 <li>Roblox</li>
+<li>Honor of Kings</li>
+<li>Valorant</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>💳 Voucher</h2>
+<h3>📱 Pulsa & Paket Data</h3>
+<ul>
+<li>Telkomsel</li>
+<li>Indosat</li>
+<li>XL</li>
+<li>Axis</li>
+<li>Tri</li>
+<li>Smartfren</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⚡ Token PLN</h3>
+<ul>
+<li>20.000</li>
+<li>50.000</li>
+<li>100.000</li>
+<li>200.000</li>
+<li>500.000</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💰 E-Wallet</h3>
+<ul>
+<li>DANA</li>
+<li>GoPay</li>
+<li>OVO</li>
+<li>ShopeePay</li>
+<li>LinkAja</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💳 Voucher Digital</h3>
 <ul>
 <li>Google Play</li>
 <li>Steam Wallet</li>
 <li>Garena</li>
+<li>Razer Gold</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>📱 Jual HP</h2>
-<p>Tersedia berbagai HP bekas berkualitas dengan harga terjangkau.</p>
+<h3>📱 Jual HP</h3>
+<ul>
+<li>HP Baru</li>
+<li>HP Bekas</li>
+<li>Aksesoris</li>
+</ul>
 </div>
 
-<center>
-<a class="button" href="https://wa.me/62XXXXXXXXXX">
-Chat WhatsApp
-</a>
-</center>
+</div>
+
+</section>
+
+<section>
+
+<h2>⭐ Kenapa Pilih Tchis Store?</h2>
+
+<div class="why">
+
+<div class="box">⚡ Proses Cepat</div>
+
+<div class="box">🔒 Aman & Terpercaya</div>
+
+<div class="box">💰 Harga Terjangkau</div>
+
+<div class="box">💬 Respon Ramah</div>
 
 </div>
+
+</section>
 
 <footer>
+
 © 2026 Tchis Store
+
 </footer>
+
+<a class="whatsapp" href="https://wa.me/62XXXXXXXXXX">
+
+WhatsApp
+
+</a>
 
 </body>
 </html>
